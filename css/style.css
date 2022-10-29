@@ -1,0 +1,137 @@
+body{
+    background-color: hsl(30, 38%, 92%);
+    text-align: center;
+}
+.container{
+    margin: 200px auto 20px;
+    background-color: white;
+    width: 400px;
+    border:none;
+    border-radius: 10px;
+    height: 300px;
+    display: flex;    
+}
+.mobile-img{
+    display: none;
+}
+.desktop-img{
+    border-radius: 10px 0 0 10px;
+}
+.text-container{
+    text-align: left;
+    margin-left: 18px;
+    position: relative;
+}
+.h-text{
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    letter-spacing: 3px;
+    font-size: 8px;
+    position: relative;
+    top: 10px;
+}
+h1{
+    font-family: 'Fraunces', serif;
+    font-size: 24px;
+}
+.description{
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    line-height: 2;
+    position: relative;
+    bottom: 8px;
+}
+.main-price{
+    font-family: 'Fraunces', serif;
+    color:  hsl(158, 36%, 37%);
+    position: relative;
+    bottom: 12px;
+}
+.price{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8px;
+    position: absolute;
+    left: 110px;
+    bottom: 40px;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    
+}
+.cart{
+    background-color:  hsl(158, 36%, 37%);
+    color: white;
+    height: 30px;
+    width: 160px;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 8px;
+}
+.cart-img{
+    position: relative;
+    right: 10px;
+    width: 10px;
+}
+@media screen and (max-width: 375px){
+    .container{
+        width: 300px;
+        height: 550px;
+        background-color: white;
+        border: none;
+        border-radius: 10px;
+        display: inline-block;
+    }
+    .desktop-img{
+        display: none;
+    }
+    .mobile-img{
+        display: block;
+        width: 300px;
+        border: none;
+        border-radius: 10px 10px 0 0;
+    }
+    .text-container{
+        position: relative;
+    }
+    .h-text{
+        letter-spacing: 3px;
+        font-size: 10px;
+        position: relative;
+        top: 10px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .description{
+        font-size: 12px;
+    }
+    .main-price{
+        font-size: 30px;
+        position: relative;
+        bottom: 24px;
+    }
+    .price{
+        font-size: 12px;
+        position: absolute;
+        left: 150px;
+        bottom: 24px;
+
+    }
+    .cart{
+        width: 250px;
+        height: 40px;
+        position: absolute;
+        bottom: -30px;
+        font-size: 12px;
+
+    }
+    .cart-img{
+        width: 15px;
+    }
+}
